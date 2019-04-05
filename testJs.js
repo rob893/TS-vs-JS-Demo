@@ -12,7 +12,15 @@ class EmployeeJs {
     }
 
     printFNameLength() {
-        console.log(this.firstName);
+        console.log(this.firstName.length);
+    }
+
+    printLength(a) {
+        console.log(a.length);
+    }
+
+    add(a, b) {
+        return a + b;
     }
 }
 
@@ -24,4 +32,11 @@ emp.printFNameLength();
 
 emp.firstName = 123;
 
+emp.printFNameLength();
+
 emp.printLNameLength();
+
+emp.printLength(5);
+
+console.log(emp.add("b" + 10));
+
