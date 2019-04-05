@@ -1,4 +1,4 @@
-class employeeTs {
+class EmployeeTs {
 
     private firstName: string;
     private lastName: string;
@@ -14,4 +14,21 @@ class employeeTs {
     public printEmpId(): void {
         console.log(this.employeeId);
     }
+
+    public printFNameLength(): void {
+        console.log(this.firstName.length);
+    }
 }
+
+let empTs: EmployeeTs = new EmployeeTs();
+
+empTs.printEmpId();
+
+empTs.printFNameLength();
+
+empTs.firstName = 123;
+
+empTs.printFNameLength();
+
+
+
